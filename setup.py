@@ -8,7 +8,7 @@ with readme_file.open("r") as fp:
     
 setup(
     name='hydroecolstm',
-    version='0.3.5',    
+    version='0.3.6',    
     description='A python package for HydroEcological Modelling using LSTM',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -22,7 +22,7 @@ setup(
               'hydroecolstm.model',
               'hydroecolstm.train',
               'hydroecolstm.feat_importance'],
-    python_requires='>=3.8',
+    python_requires='<=3.12',
     install_requires=['pandas',
                       'numpy',
                       'torch',
