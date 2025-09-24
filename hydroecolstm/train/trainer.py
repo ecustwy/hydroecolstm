@@ -134,7 +134,7 @@ class Trainer():
                                        check_point)
                 
             if early_stopping.early_stop:
-                print("Early stopping")
+                print("Early stopping.")
                 break
             
         # If the model does not stops until the last epoch

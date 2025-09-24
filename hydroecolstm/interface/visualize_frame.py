@@ -421,9 +421,8 @@ class VisualizeFrame(ctk.CTkScrollableFrame):
             file_name=ctk.filedialog.askopenfilename(title="Select data.pt file type", 
                                                      filetypes=(('pt files', '*.pt'),
                                                                 ('All files', '*.*')))
-            self.globalData.update(torch.load(file_name))
+            self.globalData.update(torch.load(file_name, weights_only=False))
             self.selected_data_file.configure(text= '...' + file_name[-30:])
-            print(self.globalData.keys())
         except:
             pass
         
