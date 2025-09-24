@@ -53,6 +53,7 @@ def run_config(config):
         # Create model 
         best_result = result.get_best_result("loss", mode="min")
         best_config = best_result.config
+        
         del best_result.config["x_train_scale"], 
         del best_result.config["y_train_scale"]
         del best_result.config["x_valid_scale"]

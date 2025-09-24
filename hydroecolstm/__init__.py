@@ -1,4 +1,4 @@
-__version__ = "0.3.6"
+__version__ = "0.3.7"
 __author__ = 'Tam V. Nguyen'
 __credits__ = 'Helmholtz Centre for Environmental Research (UFZ)'
 
